@@ -1,4 +1,8 @@
 add_one <- function(value) {
+  
   new_value <- value + 1
+  
+  print(paste("adding 1 to your input: ", value))
+
   return(new_value)
 }

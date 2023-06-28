@@ -310,12 +310,16 @@ Analytical Platform Guidance and slack channels
 •	Specific Git section on AP guidance and how to set up slack channels: Git and GitHub - Analytical Platform User Guide (justice.gov.uk) 
 •	Instructions for getting your GitHub account connected to your AP account: https://user-guidance.services.alpha.mojanalytics.xyz/github/set-up-github.html#set-up-github
 •	Gitflow in the MoJ RAP (Reproducible Analytical Pipeline) manual: https://moj-analytical-services.github.io/rap-manual/git-flow.html
+
 R training
 •	Analytical platform and related tools training: https://moj-analytical-services.github.io/ap-tools-training/index.html 
-•	Previous recordings and accompanying materials of sessions can be found here 3 Internal Training Group materials | Analytical Platform and related tools training (moj-analytical-services.github.io)
+•	Previous recordings and accompanying materials of sessions can be found here 3 Internal Training Group materials | Analytical 
+
+Platform and related tools training (moj-analytical-services.github.io)
 •	The repo for this course https://github.com/moj-analytical-services/intro_to_github_training 
 •	The GitHub repo for Introduction using R on the AP: https://github.com/moj-analytical-services/intro_using_r_on_ap
 •	The GitHub repo for the Introduction to R course: https://github.com/moj-analytical-services/IntroRTraining
+
 Cheat sheets/further links
 •	https://github.com/moj-analytical-services/intro_to_github_training/blob/main/github_cheatsheet_RStudio.pdf 
 •	git-cheat-sheet-education (github.com)

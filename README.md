@@ -134,10 +134,11 @@ When using the GUI changes to files can be seen in the status column in the pop 
 •	D – A file that has been deleted.  Staging and committing this file will delete it in the committed snapshot.
 •	R – A file that has been renamed.
 
-2.3	Pushing your changes to GitHub
+### 2.3	Pushing your changes to GitHub
 
-2.3.1	Push changes
+#### 2.3.1	Push changes
 Once you have committed your changes locally, you need to upload your commits to the remote GitHub repo. This is called pushing your commits. You push commits from a local branch to a remote copy of the branch.
+
 Terminal
 Use git push to push your branch to the remote repo.
 •	To push to a branch that already exists on the remote repo:
@@ -145,15 +146,18 @@ git push
 •	If your branch does not yet exist on the remote GitHub repo, the first time you push you will need to create a remote version:
 git push –u origin my_branch
 The option -u is a shortcut for --set-upstream, which creates a version of the branch on the remote repo. Note this will not be necessary if you created the branch using the RStudio GUI and the “Sync branch with remote” checkbox was ticked.
+
 GUI
 1.	After committing, you will see a pop-up listing any changes, additions, deletions and the commit message.
 2.	Back on the main RStudio screen, you can see how commits ahead of the remote GitHub repo you are.
 3.	To push your changes to GitHub, click the up arrow.
 4.	You will see another pop-up confirming your branch has been updated on GitHub.
-2.3.2 Merging and pull requests
+#### 2.3.2 Merging and pull requests
+
 When you’ve finished making all the changes you want to include in your branch, you will probably want to merge your branch into the main branch of the repository, which will incorporate your commits into that branch. There are two ways to merge a branch, either locally using the git merge command, or on GitHub via a “pull request”.
 A pull request is a GitHub feature that handles the merge process on the remote repo. It allows collaborators to discuss and review the proposed changes before you merge them. This is particularly useful for both quality assurance and project management. The discussion thread can be used to explain the proposed changes and link to a project plan or issues log. A branch can be protected so that pull requests can only be merged once reviewed and approved by a colleague.
 Note that once you have opened a pull request, you can continue to commit to the branch. When you push additional commits, the pull request page will update to show the latest changes.
+
 To merge a branch locally using the terminal:
 1.	Switch to the destination branch with git checkout, for example if you want to merge a branch into the main branch:
 git checkout main
@@ -168,10 +172,12 @@ If you recently pushed a change to GitHub and navigate to the online repo, GitHu
 3.	Use the drop-downs to select the base branch and comparison branch.
 4.	Click "Create pull request"
 
-2.3.3	Confirm the pull request
+#### 2.3.3	Confirm the pull request
 To merge a pull request, select "Merge pull request" at the bottom of the conversation thread. If the repo has been set up to require an approving review before you can merge, the option will not be available until someone has approved. 
-2.4	Pull changes into a local branch
+
+### 2.4	Pull changes into a local branch
 If there have been changes made to a branch on the remote repo, you will need to update your local branch to incorporate the changes. For example, if a pull request has been merged into the main branch on GitHub, you will probably want to update your local version of the main branch. This is done using the git pull command.
+
 Terminal
 Use the git pull command to merge commits added to the remote branch into your local branch.
 For example, if the remote main branch has been updated:
@@ -179,45 +185,53 @@ For example, if the remote main branch has been updated:
 git checkout main
 2.	To download the remote version and update your local branch:
 git pull
+
 GUI
 1.	After the merge has been accepted on GitHub, use the down arrow (next to the push arrow) to pull in the changes on GitHub.
 2.	A pop up will appear showing the changes.
 In the GUI example screen shots, StewBranch2 was merged with Main branch.  The local copy of Main Branch in R-Studio was updated by pulling the changes to Main Branch from GitHub. 
 2.5	View the commit history
 Once a commit has been made, it is retained in the project’s history, which means it can be viewed and returned to at any later point. It is often useful to see the history of the most recent commits on a branch, which you can do using RStudio or the git log command.
+
 GUI
 In the Rstudio Git pane, click on “History” to see the commit history for the current branch.
+
 Terminal
 The git log command shows the commit history for the current branch, starting with the most recent. The --oneline option is useful to condense the output. You can limit the number of commits shown with the – option.
 For example, to see the most recent five commits on the current branch:
 git log --oneline -5
 
-3.	Ways to approach Git to enable effective use and collaboration
+## 3.	Ways to approach Git to enable effective use and collaboration
 There is no limit to the number of people who can potentially be working on a repo at the same time. However, there are technical limits to Git’s ability to integrate people’s work effectively, and established processes and practices for dealing with these limits.
-3.1 Merges and merge conflicts
+### 3.1 Merges and merge conflicts
 What happens when a pull request is created, and git tries to merge depends on the nature of the differences (diffs) between the branches. As much as it can, Git will do try to work out what to do with the diffs and merge branches automatically, but it cannot always do this. Sometimes there can be conflicts which you need to manually resolve.
 You don’t need to understand exactly what Git is doing under the hood in these scenarios, but if you know what Git can and can’t automatically handle you can:
 •	figure out the best way to work with your team
 •	be equipped to deal with conflicts when they do arise (and they will arise)
+
 Fast forward merge
 This is when the descendant branch is being merged back into the ancestor and there have only been commits in the descendent since divergence. This is easy - effectively it is just an update.    
 e.g. Anna branches off from main – her branch is called a ‘feature’ branch - does some commits, submits a pull request to merge her branch into main, which her colleague Bruce reviews.
+
 Three-way merge
 This is when the descendant and ancestor branches being merged have both had commits made in them since divergence.    
 e.g., if Bruce also branched off to do some commits at the same time as Anna did, and then wants to merge back in after Anna’s work has been merged back in with her fast-forward merge.
 Git is good at this and will do it automatically – its facility at this is one of the key reasons people use it.
+
 However, for git to do its job, diffs must be limited to:
 •	file additions
 •	changes to different files
 •	changes in non-adjacent lines in the same file
 Other diffs (deletions in one of the merging branches, changes on the same or adjacent lines) cannot be automatically merged and trigger a merge conflict (see below)
 It is called a three-way merge because in addition to the two merging branches, Git needs to use their common ancestor (their shared state at the point of divergence) as the third branch - this tells Git what the baseline state was so that it can adopt all changes from that state.
+
 Merge conflicts
 When the descendant and ancestor branch have both had commits made in them since divergence and there are diffs that git cannot resolve automatically, we have a merge conflict. Problem diffs that trigger a merge conflict are:
 •	File changes to the same or adjacent lines
 •	File deletion in one branch
 When this happens, git gives up and it’s over to you to fix it.
-3.2 Effective collaboration
+
+### 3.2 Effective collaboration
 Getting used to working together in this way, adding to and drawing from a shared synchronised resource (the ‘origin’ on GitHub), can be difficult. There is a number of different practices that your project can adopt in order to make the best use of Github.
 Gitflow: There are different conventions for workflows (branching patterns) that teams may adopt when using git. Analysts within MoJ are generally recommended to use gitflow (not to be confused with the similarly named Github flow). The key feature of gitflow is the use of an additional branch, usually called dev, as an insulator between main and feature development branches Section 5 has more details on Gitflow.
 Work on separate project features: As a general rule, collaboration on a project works best if people try to work not only on separate files, but on separate project features, so as to minimise prospect of changes to overlapping code. Combining this approach with gitflow is a pretty solid formula.
@@ -228,7 +242,8 @@ Unit tests: Formal comprehensive systematic testing of code across the repo befo
 Protect your branches: e.g. Make dev the default, require review of PRs before merge, prevent non-admin from merging dev -> main
 Delete merged branches: Your commit history will remain if it is part of the tree of work. Note that closed PRs for abandoned branches will remain and retain commit history
 Document your repo: If you write a README file, github will show this in rich markdown at the front of the repo page. There is also a wiki feature.
-3.3 ‘undo’ commands
+
+### 3.3 ‘undo’ commands
 There is a number of different Git commands that can be used to effectively undo your work, after you’ve committed. Let’s start with changing saved objects in the working directory.
 git restore
 git restore is used to restore a specific file to a previous state.
@@ -249,11 +264,14 @@ If you’re wanting to undo some work someone else has done that you’ve pulled
 git revert
 It is also arguably conducive to transparency to use git revert within your own code development to keep a record of what you’ve done
 git reset
+
 Finally, we make you aware of another option: git reset. This allows you to move back to a previous commit (e.g. git reset HEAD~1 will take you back one).  Although it can make your commit history cleaner to look through, it is considered more risky as commits that have been reset over will ultimately be ‘orphaned’, which ultimately causes discarded work to become completely irretrievable. It’s therefore less conducive to transparency and accountability and recovering work that you might have changed your mind about discarding. In particular, it should not generally be used to undo others’ work.  However, it can be a useful tool in some contexts, such as when working locally.
-4.	Security considerations when using GitHub
+
+## 4.	Security considerations when using GitHub
 GitHub is a website with public areas accessible to all internet users. Within GitHub we have a private area called moj-analytical-services. Despite this, it is important to think about the sensitivity of the information you push to Github. You should not add data to GitHub that isn’t already publicly available - this would be a breach. See here for more guidance on security and what to do if you accidentally pushed sensitive data https://user-guidance.analytical-platform.service.justice.gov.uk/github/security-in-github.html#security-in-github. 
 Amazon S3 buckets should be used to store data. It is a web-based cloud stage platform and all data and final analytical outputs in Data and Analysis is stored in an Amazon S3 bucket. To learn more about Amazon s3 buckets, please refer to section 5 of the Introduction Using R on the AP training session. Previous recordings and accompanying materials of sessions can be found here - https://moj-analytical-services.github.io/ap-tools-training/.
-4.1 Git ignore files
+
+### 4.1 Git ignore files
 You may also not want to push some files/information/images that are required for your project onto GitHub due to sensitive information. This could also include files such as the renv folder, which is used for package management.
 To help ensure we don’t push something by accident to GitHub, we use Git ignore files. You should use the Git ignore file in your repository to tell Git which files and directories to ignore when you make a commit – allowing you to control which file types are shared on the GitHub website. Once the Git ignore file is on Github, then others can pull this from the project into RStudio to ensure they also follow the rules of pushing information to GitHub.
 Git ignore files have a list of recommended files to ignore – you can edit and save this to ensure it is relevant to your project. For example, if I saved some data for a report in a .xlsx file in the same directory as my R project, GitHub would attempt to upload this to the GitHub website with any code amendments. This could potentially lead to a breach as sensitive data has been shared online. 
@@ -262,8 +280,9 @@ To avoid this, we can use a .gitignore file – as seen below. We can add file t
 This .gitignore file allows .Rproj.user, .Rhistory, .RData, .Ruserdata to be uploaded to GitHub when the project is pushed. It doesn’t allow .xlsx, .csv, .cls, .png, .rds, .Rproj .  An * in front of a file type will tell GitHub to ignore all file types of that kind when syncing with the online repository.
 Users should also avoid putting outputs of R markdown reports on GitHub as this could contain official sensitive information and results of analysis. Adding *.docx to the .gitignore file would stop any documents being added to GitHub.
 We would also recommend adding the core file to the .gitignore file. This is generated when using RStudio crashes when trying to work with large datasets. These should not be committed to gitignore and should be deleted when they appear in the files section of RStudio. More information can be found here Security in GitHub - Analytical Platform User Guide (justice.gov.uk).
-5. Further information on Git and GitHub 
-5.1. Advanced topics
+
+## 5. Further information on Git and GitHub 
+### 5.1. Advanced topics
 We have added some information and links below on some other aspects of GitHub that users could explore that haven’t been covered in this session. These are more advanced features of GitHub and are not required to be able to use Git and GitHub as a beginner.
 •	Git releases/versions - useful for package development and those working on production/publication code - About releases - GitHub Docs.
 •	Git stash – when you want to store changes to code when they are not ready to be committed and revert to a previous commit.
@@ -284,7 +303,7 @@ With that in place, it's easy to manage things. They test the code in dev. If de
 The dev branch is not a perfect solution to be relied upon its own – e.g. what if there’s a need for another branch off while the fix is happening? That person may have to work with broken code or may reintroduce the same problem back into dev later
 (For future reference, other possibilities for dealing with this specific problem include automated integration tests with github actions, and an alternative to merging called rebasing, but these are technically challenging and/or complex and beyond the scope of this class). 
 
-5.2	 Useful links
+### 5.2	 Useful links
 Analytical Platform Guidance and slack channels
 •	Use this link to access the AP control panel: https://controlpanel.services.analytical-platform.service.justice.gov.uk/tools/.
 •	Lots more helpful guidance can be found in the MoJ Analytical Platform Guidance: https://user-guidance.services.alpha.mojanalytics.xyz/

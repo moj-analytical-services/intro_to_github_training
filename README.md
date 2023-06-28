@@ -1,35 +1,46 @@
-Introduction to Git/GitHub
-Basic setup
+# Introduction to Git/GitHub
+## Basic setup
 This document provides accompanying training material used in the Introduction to Git/GitHub Training session, conducted by the Data & Analysis R training group. Prior to joining the session, you should ensure you are set up on the Analytical Platform - see https://user-guidance.services.alpha.mojanalytics.xyz/get-started.html.
+
 We expect participants to have completed the Introduction to using R on the Analytical Platform (or equivalent standard) and Introduction to R (or equivalent standard). Previous recordings and accompanying materials of sessions can be found here - https://moj-analytical-services.github.io/ap-tools-training/. 
+
 You should then work through the following:
 1.	Deploy (if necessary) and open RStudio: https://user-guidance.services.alpha.mojanalytics.xyz/tools/control-panel.html#control-panel
 2.	Connect RStudio to GitHub: https://user-guidance.services.alpha.mojanalytics.xyz/github.html#setup-github-keys-to-access-it-from-r-studio-and-jupyter
 3.	Clone the GitHub repository for this course (https://github.com/moj-analytical-services/intro_to_github_training) by following step 1 here: https://user-guidance.services.alpha.mojanalytics.xyz/github.html#r-studio
 4.	In the Console window in RStudio, enter this command to make sure you have the required packages installed: renv::restore()
 
-Contents
+# Contents
 This session will provide you with an understanding of what Git/GitHub is and explain the key benefits of using it alongside the Analytical Platform and RStudio. Step-by-step instructions will be provided about how to use GitHub in RStudio and how to collaborate effectively with others. Even if you are coding a one-off product, we highly recommend you use GitHub.
-Sessions aims
+
+## Sessions aims
 1.	What Git and GitHub are?
 2.	Understanding how to use GitHub
 3.	Ways to approach Git to enable effective use and collaboration
 4.	Security considerations when using GitHub
-5.	Further information and useful links 
+5.	Further information and useful links
+   
 As this session is focused on those who are new to Git/Github, it will not cover more advanced commands and topics. We welcome comments and volunteers to develop a session in the future.
-1.	What are Git and GitHub?
+
+## 1.	What are Git and GitHub?
 First, Git and GitHub are two separate things.
+
 Git is a version control system. Version control refers to the process of saving different files or ‘versions’ throughout the various stages of a project. It’s a bit like “Microsoft Office’s track changes on steroids”. This enables users to keep track of changes to code. All code written on the Analytical Platform should be stored in a Git repository on GitHub, including Python scripts and Jupyter notebooks. In this session, we will show how to use Git in RStudio.
+
 GitHub makes it easier to collaborate using git. It’s a platform and website that provides a home for your coding projects allowing multiple people to work on a single project and see edits to the code in real-time. The code is held in a repository on the GitHub website – a repository is a file location where your project is stored. This means your code can be made publicly available in GitHub repositories on the GitHub website so others can interact with and contribute to the code. GitHub is therefore, an open-source platform which is free to use.
+
 To gain access to the Analytical Platform, you would have needed to use GitHub to create a GitHub account. The Analytical Platform team use this authentication service of GitHub to enable users to have one account for the Analytical Platform, RStudio and GitHub. If you have not set up an Analytical Platform or GitHub account, then please refer to the guidance here Get Started - Analytical Platform User Guide (justice.gov.uk) and watch the Introduction to using R on the Analytical Platform training session found here https://moj-analytical-services.github.io/ap-tools-training/.
-1.2	 Advantages of using Git and GitHub 
+
+### 1.2	 Advantages of using Git and GitHub 
 As your projects develop, new coding ideas thought up, or new improvements are created, you will need to keep track of what changes are being made, track future developments and be able to go back to previous versions if all else fails. Git and GitHub keep track of evolving projects in a sensible, precise way, with the ability to view, compare in detail and restore previous versions. It is also collaborative, allowing multiple people to work on a project at one time with a managed way of combining several people’s work. This makes it easier to resolve errors and fix other mistakes that might occur through development of code with the ability to restore previous versions.
-1.2.1 Advantages of Git
+
+#### 1.2.1 Advantages of Git
 As Git is different to GitHub, it is important to understand their differences and benefits. Git has many great advantages especially when it comes to performance. From easily creating new code that can be stored and saved, to managing and creating new versions of your project and quality checking your code so it has been optimised to perform better. Some of the advantages are as follows:
 •	Security: Git as the ability to keep your version or different versions secure, saved and easily accessible
 •	Flexibility: Git’s flexibility allows the user to have multiple different versions of your code where changes made in different versions do not affect each other.
 •	Version Control: Having different versions of your code will allow for greater quality checks and each different version can be checked individually.
-1.2.2 Advantages of GitHub 
+
+#### 1.2.2 Advantages of GitHub 
 GitHub is your user-friendly interface of Git that brings everything to the forefront, in an easy to understand and comprehendible way. This allows someone to look at the project and understand why the changes were made earlier on. You can note changes in each version to help team members stay up to date on what’s completed and what needs to be accomplished. More benefits include:
 •	Accessibility: You can access the code files from another computer and so can other developers.
 •	Documentation: ReadME.md file one of the first things other users see within your repository/project. The README.md file is used for documentation purposes – providing other users with an overview of the project so they run the code in RStudio.
@@ -37,32 +48,42 @@ GitHub is your user-friendly interface of Git that brings everything to the fore
 •	Project management: Coordinate and track your project in one place. This is like a Trello Board but allows you to include issues you have found in the code. 
 •	GitHub issues: This is a central place to maintain a ‘to do’ list for a project, and to discuss them with your team. ‘Issues’ can be bug fixes (such as ‘fix divide by zero errors in output tables’), or features (e.g. ‘add a percentage change column to output table’), or anything else you want.
 •	Version control management: By using issues and projects you can keep track of who is working on what. If you use issues, you automatically preserve a record of why changes were made to code. So you can see when a line of code was last changed, and which issue it related to, and who wrote it.
+
 Git and GitHub have a multitude of benefits that help individuals manage their projects, and if used correctly and efficiently GitHub will give you additional security in your projects allowing you to track, manage and maintain the standard of your work. With this additional quality assurance measure you can be certain that your code and methods are exactly what you expect!
-1.3 Ways to use Git in RStudio
+
+### 1.3 Ways to use Git in RStudio
 To take advantage of GitHub, we need to know how to use Git to interact between RStudio on the Analytical Platform and GitHub. 
 There are two ways to use Git in RStudio:
 •	The terminal – this is the command line interface. This allows users to write commands that associate directly with the terminal window. Users must be aware of the commands to perform any task they want and understand the responses from the terminal.
 •	The graphical user interface (GUI) – this lets users use graphics for interacting with Git such as buttons, windows etc. It’s easier to use but some people find it hard to know what action Git is performing.
+
 Some people prefer the terminal, some prefer the GUI and some people use a mixture of the two. The more you continue to use Git and GitHub, the more comfortable you’ll get using the commands and/or interface. The key is to start small and maintain your momentum. It will eventually get easier as you build small projects and host them on GitHub using Git. 
 Later in this session, we will provide a step-by-step guide on how to use the terminal and the graphical user interface (GUI).
-2.	Understanding how to use GitHub
+
+## 2.	Understanding how to use GitHub
 We will walk through the basic steps on how to use Git and GitHub for you to take away and practice with your own projects. We will do this in four main sections:
 1.	Starting a repository and creating a branch
 2.	Editing files in your repository and committing your changes
 3.	Pushing your changes to Github
 4.	Pulling your changes to RStudio
 Each section will first explain theoretically the action we are performing using visual aids and then demonstrate how to use this in the GUI and the terminal – providing you with both options. Please only use the terminal or the GUI once in each step if following along in your R studio.
-2.1 Starting a repository and creating a branch
-2.1.1	Create/clone a repository
+
+### 2.1 Starting a repository and creating a branch
+#### 2.1.1	Create/clone a repository
 A repository is a place to store your code and record changes to your project.
 On the homepage of the MoJ Analytical Services organisation on GitHub (https://github.com/moj-analytical-services) you can see all the repositories related to work in MoJ Data and Analysis that you have access to. A repository (known as a ‘repo’) is an area on GitHub where you can store code and documentation for a particular project. Each project in RStudio should have a separate repo associated with it.
+
 Start by creating a new repository for your project on GitHub (see the Analytical Platform guidance) or find the repository you want to work on if it exists already. You then need to create a local copy of the repository that you can work on and change (see the Analytical Platform guidance and Intro to us R on the AP). Creating a local copy of a repository is called cloning the repository. 
+
 In this session, we will use the repository created for this training - https://github.com/moj-analytical-services/intro_to_github_training. You should have cloned this repository into RStudio before this session and have it ready in your projects. If not, then please follow the steps https://user-guidance.services.alpha.mojanalytics.xyz/github.html#r-studio. It is not essential to follow along during this course, but it is useful to practice the steps whilst watching the presenters.
-2.1.2	Create a branch
+
+#### 2.1.2	Create a branch
 Once you have created a repo or have cloned a repo into your RStudio, then you will want to add or make changes to your R project. You can make changes to your ‘main’ branch on the repository, or you can create a new branch to make changes to the project separately. Branches allow multiple people or multiple components to be developed at the same time. We will explain ways of working with branches in section 3. 
+
 GUI
 1.	Create a branch: click the “Git” tab on the right of R-Studio, then the small purple shapes on the right of the screen, add a branch name, and click create. (Note that if the “Sync branch with remote” checkbox is ticked the branch will also be created on the remote GitHub repo, removing the need to do that manually at a later stage.)
 2.	A pop-up will appear with a message that you have switched to a new branch, and the branch name will update in the Git pane. You can just close the pop-up.
+
 Terminal
 •	Use the git status command before you create a new branch. git status displays the current state of your files and the staging area: what branch you’re on and which files have been modified or staged since the last commit.
 •	To create a new branch:
@@ -70,20 +91,24 @@ git checkout –b my_branch
 •	To switch to another existing branch, for example to switch to main:
 git checkout main
 
-2.2	Editing files in your repository and committing your changes
+### 2.2	Editing files in your repository and committing your changes
 
-2.2.1	Edit some files, for example write some code in an R script
+#### 2.2.1	Edit some files, for example write some code in an R script
 Next, make some changes to a file in your repository. For example, you could create an R script and write some code in it. In this training session, please write something in the R script and then push the changes so you can see it on GitHub. Normally, you could push any change to GitHub – comments, code, documents etc.
 If using the GUI, any files that have been edited and saved will appear in the git tab on the right-hand side of the screen.  You can view the changes by pressing the Diff button and selecting the file name.  Lines highlighted in red have been removed; lines highlighted in green have been added. Lines written in grey have not been changed.  The left margin shows the line numbers of the code that has changed.    
 In the terminal, the git diff command can be used to show changes. Typing the command without any options shows the uncommitted changes since the last commit.
-2.2.2	Stage and commit a group of changes
+
+#### 2.2.2	Stage and commit a group of changes
 Once you are happy with the changes to your files, you can save a snapshot containing the state of all your files by creating a “commit”. A commit can contain changes to one file or multiple files. The ability to create commits, each containing a different state of your repository, and to switch between the commits, is what makes Git a version control system.
 Before you can commit changes, you must add them to the "staging area", which tells Git to include the changes in your next commit.
+
 The steps for committing changes are:
 1.	Save the changes to your files
 2.	Add the modified files to the staging area.
 3.	Commit the staged files.
+
 Every commit needs an accompanying commit message in which you should briefly describe the changes made to the files. The commit message will appear alongside the commit in the repository history, helping you and others to see what changes were made.
+
 Terminal
 Use git add to add files to the staging area.
 •	To stage a single file:
@@ -95,6 +120,7 @@ Use git commit to commit the staged files.
 git commit
 •	To commit your changes and type an inline commit message (instead of opening the text editor):
 git commit -m "My commit message"
+
 GUI
 Click either Diff or Commit to open the Review changes pop-up.
 1.	To stage a file, click the check box by the file name. Stage every file you would like to include in the commit.

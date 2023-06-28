@@ -1,6 +1,6 @@
 #An extremely basic R file
 
-character_var <- 'This is my name!'
+character_var <- 'Stewart Keating'
 
 numeric_var <- 22
 

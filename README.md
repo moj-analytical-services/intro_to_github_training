@@ -1,7 +1,7 @@
 # Intro to Git and GitHub training
 ### Run as part of the R training delivered by Data & Analysis
 
-This repository provides accompanying training material used in the Introduction to Git/GitHub Training session, conducted by the Data & Analysis R training group. 
+This repository provides accompanying training material used in the Introduction to Git/GitHub training session, conducted by the Data & Analysis R training group. 
 
 Prior to joining the session, you should ensure you are set up on the Analytical Platform - see https://user-guidance.services.alpha.mojanalytics.xyz/get-started.html.
 
@@ -33,3 +33,5 @@ This training session will provide you with an understanding of what Git/GitHub 
 - gitignore file - used as part of the training and required for GitHub repositories.
 - useful_links.md - links to other training materials we recommend.
 
+
+  #### Any issues or comments, please contact the R training group

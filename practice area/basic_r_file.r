@@ -3,5 +3,5 @@
 character_var <- 'Stewart Keating'
 
 
-numeric_var <- 22
+numeric_var <- 23
 

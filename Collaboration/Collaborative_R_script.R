@@ -2,7 +2,7 @@
 add_one <- function(value) {
   
   if (class(value) != 'numeric') {
-    stop("please provide a numeric input")
+    stop("this function only accepts numeric inputs")
   }
 
   new_value <- value + 1

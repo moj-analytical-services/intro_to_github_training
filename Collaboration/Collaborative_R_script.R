@@ -2,12 +2,12 @@
 add_one <- function(value) {
   
   if (class(value) != 'numeric') {
-    stop("this function only accepts numeric inputs")
+    stop("Please provide a numeric input")
   }
 
   new_value <- value + 1
   
-  print(paste("adding 1 to your input: ", value))
+  print(paste("Adding 1 to your input value: ", value))
   
   return(new_value)
   

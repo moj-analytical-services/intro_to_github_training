@@ -1,1 +1,0 @@
-This is a text file that I will delete as part of a merge conflict demo resolution.

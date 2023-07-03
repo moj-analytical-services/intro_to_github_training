@@ -31,7 +31,7 @@ This training session will provide you with an understanding of what Git/GitHub 
 - Conflict_demo folder - used as a demonstration for a merge conflict.
 - renv folder and renv.lock - used for package management.
 - gitignore file - used as part of the training and required for GitHub repositories.
-- useful_links.md - links to other training materials we recommend.
+- Useful links folder - links to other training materials we recommend.
 
 
-  #### Any issues or comments, please contact the R training group
+  #### Any issues or comments, please contact the R training group.

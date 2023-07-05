@@ -1,3 +1,4 @@
 #tutorial
 
-my_name <-'jamie'
+my_name <-'john'
+mynumber<- '29'

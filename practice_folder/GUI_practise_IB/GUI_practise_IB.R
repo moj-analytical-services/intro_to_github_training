@@ -1,5 +1,7 @@
 #GUI practise 
 
-my_name <- "Isobel Bochel"
+my_name <- "Isobel Main Bochel"
 
-House number <- 39 
+House_number <- 41
+
+Colour <- "Purple"

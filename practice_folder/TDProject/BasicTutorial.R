@@ -2,7 +2,7 @@ PWD
 ls
 
 
-myname <- 'TDavid'
+myname <- 'Tai David'
 
 X<- '4X4'
 
@@ -10,4 +10,6 @@ X<- '4X4'
 
 myteam<-'reducing reoffending'
 
+
+mynousenumber<-4
 

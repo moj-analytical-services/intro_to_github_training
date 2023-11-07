@@ -1,3 +1,0 @@
-#rh_test
-
-"hello"

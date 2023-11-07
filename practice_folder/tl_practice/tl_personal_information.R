@@ -1,1 +1,3 @@
 # My information
+
+name <- "Tania"

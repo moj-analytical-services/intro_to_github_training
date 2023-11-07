@@ -1,3 +1,5 @@
 # My information
 
-my_name <- "graham ison"
+my_name <- "Graham Ison"
+
+my_team <- "CJS data science"

@@ -1,3 +1,5 @@
-# git hub practice
+# git hub practice 
 
-x = 5
+# new add line and commiting again
+
+x = 6

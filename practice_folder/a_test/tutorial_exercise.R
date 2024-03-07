@@ -2,4 +2,3 @@
 
 name <- 'testing'
 
-house_num <- '1'

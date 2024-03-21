@@ -2,4 +2,8 @@
 
 # new add line and commiting again
 
-x = 6
+x <- 6
+x
+
+y <- 8
+y

@@ -1,6 +1,6 @@
-# This is a function to increase a number by one
+# This is a function to add two to a numeric input
 
-add_one <- function(value) {
+add_two <- function(value) {
   
   
   
@@ -12,11 +12,11 @@ add_one <- function(value) {
   
   
   
-  result <- value + 1.0
+  result <- value + 2
   
   
   
-  print(paste("Now adding one to your input value: ", value))
+  print(paste("Now adding 2 to your input value: ", value))
   
   
   

@@ -1,3 +1,6 @@
 # Config file containing personal information
 
-name <- "Graham"
+name <- "Graham Ison"
+
+team <- "CJS data science"
+

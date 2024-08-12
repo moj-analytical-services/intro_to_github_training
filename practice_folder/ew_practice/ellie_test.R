@@ -1,4 +1,6 @@
 
 # my information
 
-name <- "Ellie Worthington"
+my_name <- "Ellie Worthington"
+
+my_team <- "APP Prison Safety"

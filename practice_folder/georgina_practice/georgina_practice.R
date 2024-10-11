@@ -1,2 +1,4 @@
 
-my_name <- 'georgina bason
+my_name <- 'georgina bason'
+
+myhousenumber <- 5

@@ -1,3 +1,3 @@
 "exercise practice"
 
-y <- 4
+y <- 45

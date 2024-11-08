@@ -1,6 +1,6 @@
 # Introduction to Git and GitHub training
 
-This repository provides accompanying training material used in the Introduction to Git and GitHub training session, run by the MoJ Analytical Platform tools training group.
+This repository provides training material for the Introduction to Git and GitHub training session, run by the MoJ Analytical Platform tools training group.
 
 ## Preparation
 

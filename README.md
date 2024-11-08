@@ -18,6 +18,8 @@ The main training presentation is in the Word document [Intro to Git and Github.
 
 Training sessions are run several times a year. You can find a recording of a recent session in the [training guide](https://moj-analytical-services.github.io/ap-tools-training/ITG.html#gitgithub-training).
 
+If you want to work through the material on your own, go through the Word document and switch to the PowerPoint presentation slides at the points it refers to them.
+
 ## Feedback
 
 If you have attended a course, worked through the material or watched a video of a recent session, please leave [feedback](https://airtable.com/app54DtfpHprLGpKu/shr9u2OJB2pW8Y0Af) to help us improve the sessions.

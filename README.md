@@ -12,11 +12,11 @@ In RStudio, clone the repository for this course by selecting File > New project
 - Project directory name: intro_to_github_training
 - Create project as subdirectory of: ~
 
-## The training material
+## Training sessions
 
-The main training presentation is in the Word document Intro to Git and Github.docx. The session also uses the PowerPoint presentation GitGitHub slides.pptx.
+The main training presentation is in the Word document [Intro to Git and Github.docx](https://github.com/moj-analytical-services/intro_to_github_training/blob/main/Intro%20to%20Git%20and%20Github.docx). The session also uses the PowerPoint presentation [GitGitHub slides.pptx](https://github.com/moj-analytical-services/intro_to_github_training/blob/main/GitGitHub%20slides.pptx).
 
-Training sessions are run several times a year by the MoJ Analytical Platform tools training group. You can find a recording of a recent session in the [R/SQL/Git Training Video Library](https://justiceuk.sharepoint.com/:u:/r/sites/RTrainingGroup/SitePages/video_collections.aspx?csf=1&web=1&share=EQmizR4ln25Hotr46oEK5_EB4dVwlRXdiOF0Xkyc1Mv9TA&e=wyNbpW)
+Training sessions are run several times a year. You can find a recording of a recent session in the [training guide](https://moj-analytical-services.github.io/ap-tools-training/ITG.html#gitgithub-training).
 
 ## Feedback
 

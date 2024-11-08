@@ -1,7 +1,6 @@
-# Intro to Git and GitHub training
-### Run as part of the R training delivered by Data & Analysis
+# Introduction to Git and GitHub training
 
-This repository provides accompanying training material used in the Introduction to Git/GitHub training session, conducted by the Data & Analysis R training group. 
+This repository provides accompanying training material used in the Introduction to Git and GitHub training session, run by the MoJ Analytical Platform tools training group.
 
 ## Preparation
 
@@ -17,7 +16,7 @@ In RStudio, clone the repository for this course by selecting File > New project
 
 The main training presentation is in the Word document Intro to Git and Github.docx. The session also uses the PowerPoint presentation GitGitHub slides.pptx.
 
-Training sessions are run several times a year by the Data and Analysis R and SQL Training Group. You can find a recording of a recent session in the [R/SQL/Git Training Video Library](https://justiceuk.sharepoint.com/:u:/r/sites/RTrainingGroup/SitePages/video_collections.aspx?csf=1&web=1&share=EQmizR4ln25Hotr46oEK5_EB4dVwlRXdiOF0Xkyc1Mv9TA&e=wyNbpW)
+Training sessions are run several times a year by the MoJ Analytical Platform tools training group. You can find a recording of a recent session in the [R/SQL/Git Training Video Library](https://justiceuk.sharepoint.com/:u:/r/sites/RTrainingGroup/SitePages/video_collections.aspx?csf=1&web=1&share=EQmizR4ln25Hotr46oEK5_EB4dVwlRXdiOF0Xkyc1Mv9TA&e=wyNbpW)
 
 ## Feedback
 

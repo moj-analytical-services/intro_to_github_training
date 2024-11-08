@@ -5,15 +5,13 @@ This repository provides accompanying training material used in the Introduction
 
 ## Preparation
 
-Prior to joining the session, you should ensure you are set up on the Analytical Platform - see https://user-guidance.services.alpha.mojanalytics.xyz/get-started.html.
+Before the session, make sure you are set up on the Analytical Platform - see the [Quickstart guide](https://user-guidance.services.alpha.mojanalytics.xyz/get-started.html) in the user guidance. Also, make sure you have followed the steps to [set up RStudio](https://user-guidance.analytical-platform.service.justice.gov.uk/get-started.html#6-set-up-rstudio).
 
-We expect participants to have completed the Introduction to using R on the Analytical Platform (or equivalent standard) and Introduction to R (or equivalent standard). Previous recordings and accompanying materials of sessions can be found here - https://moj-analytical-services.github.io/ap-tools-training/. 
+In RStudio, clone the repository for this course by selecting File > New project. In the New Project Wizard, select Version Control, then Git, and fill in the following:
 
-You should then work through the following:
-1.	Deploy (if necessary) and open RStudio: https://user-guidance.services.alpha.mojanalytics.xyz/tools/control-panel.html#control-panel
-2.	Connect RStudio to GitHub: https://user-guidance.services.alpha.mojanalytics.xyz/github.html#setup-github-keys-to-access-it-from-r-studio-and-jupyter
-3.	Clone the GitHub repository for this course (https://github.com/moj-analytical-services/intro_to_github_training) by following step 1 here: https://user-guidance.services.alpha.mojanalytics.xyz/github.html#r-studio
-4.	In the Console window in RStudio, enter this command to make sure you have the required packages installed: renv::restore()
+- Repository URL: git@github.com:moj-analytical-services/intro_to_github_training.git
+- Project directory name: intro_to_github_training
+- Create project as subdirectory of: ~
 
 ## The training material
 

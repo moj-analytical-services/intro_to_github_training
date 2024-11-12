@@ -1,1 +1,2 @@
-name <- "Graham"
+name <- "Graham Ison"
+team <- "CJS data science"

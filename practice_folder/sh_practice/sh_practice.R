@@ -1,2 +1,0 @@
-name <- "Sam"
-team <- "DMET"

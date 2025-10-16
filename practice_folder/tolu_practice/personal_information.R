@@ -1,3 +1,5 @@
 # My information
 
-name <- "Tolulope Latunde"
+my_name <- "Tolulope Latunde"
+
+my_team <- "ESW-Analysts"

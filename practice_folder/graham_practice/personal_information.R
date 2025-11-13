@@ -1,3 +1,3 @@
 # Personal information
-name <- "Graham"
-team <- "BOLD reducing reoffending"
+name <- "Graham Ison"
+team <- "BOLD reducing reoffending data science team"

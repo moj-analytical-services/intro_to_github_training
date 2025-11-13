@@ -1,2 +1,0 @@
-name <- "Hannah"
-team <- "Analysis"

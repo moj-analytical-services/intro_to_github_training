@@ -1,3 +1,0 @@
-
-#personal info
-name <- "Muslihah"
